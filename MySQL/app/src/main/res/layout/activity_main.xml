@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_space"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Query" />
+
+    <EditText
+        android:id="@+id/inputQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblQuery"
+        android:layout_alignLeft="@id/lblQuery"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter Query"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnRunQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputQuery"
+        android:layout_alignLeft="@id/inputQuery"
+        android:layout_marginTop="20dp"
+        android:onClick="runQuery"
+        android:text="RUN QUERY" />
+
+    <TextView
+        android:id="@+id/lblMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRunQuery"
+        android:layout_alignLeft="@id/btnRunQuery"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>
